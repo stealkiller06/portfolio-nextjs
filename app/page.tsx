@@ -1,5 +1,7 @@
 import Image from "next/image";
 import { socialLinks } from "./config";
+import { YouTubeEmbed } from "./components/youtube-embed";
+import { TikTokEmbed } from "./components/tiktok-embed";
 
 export default function Page() {
   try {
@@ -90,6 +92,39 @@ export default function Page() {
             </p>
           </div>
         </div>
+
+        <section className="mt-12">
+          <h2 className="text-2xl font-bold mb-6">Tech Content Creation</h2>
+          <p className="text-gray-600 dark:text-gray-300 mb-8">
+            I enjoy sharing my knowledge and experiences through tech content
+            creation. Here are some of my recent videos:
+          </p>
+
+          <div className="grid md:grid-cols-2 gap-8 mb-8">
+            <div className="space-y-4">
+              <h3 className="text-lg font-semibold">YouTube Tutorial</h3>
+              <div className="aspect-video rounded-lg overflow-hidden">
+                <YouTubeEmbed videoId="KKtXvgCquBI" />
+              </div>
+              <p className="text-sm text-gray-500 dark:text-gray-400">
+                A detailed tutorial on modern web development techniques and
+                best practices.
+              </p>
+            </div>
+
+            <div className="space-y-4">
+              <h3 className="text-lg font-semibold">TikTok Tech Tips</h3>
+              <div className="md:max-w-[400px] max-w-[325px] mx-auto rounded-lg overflow-hidden bg-gray-100 dark:bg-gray-800">
+                <div className="aspect-[9/16]">
+                  <TikTokEmbed videoUrl="https://www.tiktok.com/@frank_pena/video/7439538618428837175" />
+                </div>
+              </div>
+              <p className="text-sm text-gray-500 dark:text-gray-400">
+                Quick tech tips and insights shared on TikTok.
+              </p>
+            </div>
+          </div>
+        </section>
       </section>
     );
   } catch (error) {
