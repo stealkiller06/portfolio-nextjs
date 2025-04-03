@@ -58,11 +58,11 @@
 }
 
 /* Dark theme link styles */
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   .tweet .react-tweet-theme p a {
     @apply border-gray-500 text-white hover:border-white;
   }
-}
+} */
 
 /* Remove link underline on hover for both themes */
 .tweet .react-tweet-theme p a:hover {

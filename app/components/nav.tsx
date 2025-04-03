@@ -2,11 +2,11 @@ import Link from "next/link";
 import { ThemeSwitch } from "./theme-switch";
 import { metaData } from "../config";
 
-const navItems = {
-  "/blog": { name: "Blog" },
-  "/projects": { name: "Projects" },
-  "/photos": { name: "Photos" },
-};
+// const navItems = {
+//   "/blog": { name: "Blog" },
+//   "/projects": { name: "Projects" },
+//   "/photos": { name: "Photos" },
+// };
 
 export function Navbar() {
   return (
@@ -18,7 +18,7 @@ export function Navbar() {
           </Link>
         </div>
         <div className="flex flex-row gap-4 mt-6 md:mt-0 md:ml-auto items-center">
-          {Object.entries(navItems).map(([path, { name }]) => (
+          {/* {Object.entries(navItems).map(([path, { name }]) => (
             <Link
               key={path}
               href={path}
@@ -26,8 +26,8 @@ export function Navbar() {
             >
               {name}
             </Link>
-          ))}
-          <ThemeSwitch />
+          ))} */}
+          {/* <ThemeSwitch /> */}
         </div>
       </div>
     </nav>
