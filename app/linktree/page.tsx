@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 const links = [
   {
     name: "About Me",
-    url: "https://frankpena.com",
+    url: "https://frankpena.dev",
     icon: <FaCode color="#ffffff" />,
   },
   {
