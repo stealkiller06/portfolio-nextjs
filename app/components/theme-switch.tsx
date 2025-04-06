@@ -24,7 +24,7 @@ export const ThemeSwitch: React.FC = () => {
   const { setTheme } = useTheme();
   const [mounted, setMounted] = React.useState(false);
   const [currentTheme, setCurrentTheme] = React.useState<"light" | "dark">(
-    "light"
+    "dark"
   );
 
   const getColorPreference = (): "light" | "dark" => {

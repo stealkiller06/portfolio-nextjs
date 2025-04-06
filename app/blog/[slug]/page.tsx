@@ -65,7 +65,7 @@ export default async function Blog({ params }) {
 
   return (
     <section>
-      <script
+      {/* <script
         type="application/ld+json"
         suppressHydrationWarning
         dangerouslySetInnerHTML={{
@@ -86,7 +86,7 @@ export default async function Blog({ params }) {
             },
           }),
         }}
-      />
+      /> */}
       <h1 className="title mb-3 font-medium text-2xl tracking-tight">
         {post.metadata.title}
       </h1>
